@@ -34,6 +34,11 @@ jobs:
         working-directory: app
         run: npm audit --omit=dev
 
+      - name: Run Semgrep SAST
+        uses: semgrep/semgrep-action@v1
+        with:
+          config: p/ci
+
       - name: Set image name
         id: image
         run: |
