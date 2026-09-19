@@ -1,0 +1,9 @@
+sbom.spdx.json
+.env
+*.key
+*.key.pub
+cosign.key
+cosign.pub
+node_modules
+
+node_modules/
